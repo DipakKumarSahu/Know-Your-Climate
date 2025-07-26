@@ -1,0 +1,415 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('images/backGround.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+	font-size:9px;
+}
+
+.date {
+    text-align: center;
+    font-size:15px;
+}
+
+
+form {
+    width: 91.5vw;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+form input {
+    background-color: rgba(248, 255, 248, 0.521);
+    width: 27vw;
+    height: 5vh;
+    border-radius: 32px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin-left: 95px;
+     font-size:20px;
+}
+
+form input::placeholder {
+    color: 0 0 0 0.10;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+form button {
+    background-color: #4CC5C5;
+    color: white;
+    border: none;
+    width: 6vw;
+    height: 5vh;
+    border-radius: 32px;
+    padding: 2px;
+    margin-left: 95px;
+    margin-top: 20px;
+}
+
+h4 {
+    text-align: center;
+    padding: 5px;
+    padding-top: 20px;
+    margin: 10px;
+}
+
+
+.result {
+    background-color: rgba(20, 19, 19, 0.164);
+    width: 32vw;
+    height: 40vh;
+    border-radius: 51px;
+    position: relative;
+    bottom: -13%;
+    left: 34.5%;
+
+}
+
+.attributes {
+    padding: 5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: calibri;
+    justify-content: space-between;
+    justify-items: center;
+    padding-left: 12%;
+}
+
+.dateTime {
+    padding-top: 5px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.text-edit {
+    font-size: 12px;
+}
+
+.deg-edit {
+    font-size: 22px;
+}
+
+
+
+.thermometer img {
+    width: 80%;
+    padding-bottom: 19px;
+}
+
+.wi img {
+    width: 90%;
+    padding-bottom: 17px;
+}
+
+
+.windpic img {
+    width: 80%;
+    padding-bottom: 15px;
+}
+
+.humidity img {
+    width: 80%;
+    padding-bottom: 12px;
+}
+
+.pad {
+    margin-right: 40px;
+}
+
+.exmar {
+    margin-top: 22px;
+}
+
+@media(max-width:1300px) {
+    .result {
+        width: 40vw;
+        height: 37vh;
+
+    }
+
+    form {
+        width: 60vw;
+        margin-top: 90px;
+        margin-right: 0;
+        margin-left: 19%;
+        padding: 5px;
+
+    }
+
+    form input {
+        width: 50vw;
+        height: 4vh;
+    }
+
+    form button {
+        width: 12vw;
+        height: 5vh;
+        margin-bottom: 2%;
+    }
+
+}
+
+
+@media(max-width:1100px) {
+
+    h4 img {
+        width: 90vw;
+        height: 10vh;
+    }
+
+    form {
+        width: 70vw;
+        margin-top: 0px;
+        margin-left: 10%;
+        padding: 5px;
+
+    }
+
+    form input {
+        width: 50vw;
+        height: 4vh;
+    }
+
+    form button {
+        width: 12vw;
+        height: 5vh;
+    }
+
+    .result {
+        background-color: rgba(20, 19, 19, 0.164);
+        width: 45vw;
+        height: 35vh;
+        left: 27%;
+
+    }
+
+
+    .thermometer img {
+        width: 70%;
+
+    }
+
+    .wi img {
+        width: 70%;
+
+    }
+
+
+    .windpic img {
+        width: 70%;
+
+    }
+
+    .humidity img {
+        width: 70%;
+
+    }
+
+    .text-edit {
+        font-size: 10px;
+    }
+
+    .deg-edit {
+        font-size: 20px;
+    }
+
+
+
+
+}
+
+@media(max-width:850px) {
+
+    form input {
+        width: 70vw;
+        height: 4vh;
+    }
+    form button {
+        width: 22vw;
+        height: 5vh;
+
+    }
+
+    .result {
+        margin-top: 5%;
+        width: 58vw;
+        height: 33vh;
+        left: 22.5%;
+    }
+
+    .thermometer img {
+        width: 60%;
+
+    }
+
+    .wi img {
+        width: 60%;
+
+    }
+
+
+    .windpic img {
+        width: 60%;
+
+    }
+
+    .humidity img {
+        width: 60%;
+
+    }
+    .date{
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width:650px) {
+    .result {
+        width: 80vw;
+        height: 33vh;
+        left:12%;
+    }
+
+    .thermometer img {
+        width: 62%;
+
+    }
+
+    .wi img {
+        width: 62%;
+
+    }
+
+
+    .windpic img {
+        width: 62%;
+
+    }
+
+    .humidity img {
+        width: 62%;
+
+    }
+
+    form {
+        width: 60vw;
+        margin-top: 90px;
+        margin-right: 0;
+        margin-left: 12%;
+        padding: 5px;
+
+    }
+
+    form input {
+        width: 70vw;
+        height: 4vh;
+    }
+
+    form button {
+        width: 12vw;
+        height: 5vh;
+        margin-bottom: 0.5%;
+    }
+
+
+
+}
+
+
+@media screen and (max-width:478px) {
+
+    form {
+        width: 60vw;
+        margin-top:10px;
+        padding: 5px;
+
+    }
+
+    form input {
+        width: 78vw;
+        height: 4vh;
+    }
+
+    form button {
+        width: 18vw;
+        height: 5vh;
+        margin-bottom: 0.2%;
+    }
+    .result {
+        width: 92vw;
+        height: 25vh;
+        left:4%;
+    }
+
+    .thermometer img {
+        width: 62%;
+
+    }
+
+    .wi img {
+        width: 62%;
+
+    }
+
+
+    .windpic img {
+        width: 62%;
+
+    }
+
+    .humidity img {
+        width: 62%;
+
+    }
+
+    form {
+        width: 60vw;
+        margin-top: 90px;
+        margin-right: 0;
+        margin-left: 6%;
+        padding: 5px;
+
+    }
+
+    form input {
+        width: 70vw;
+        height: 4vh;
+    }
+
+    form button {
+        width: 19vw;
+        height: 5vh;
+        margin-bottom: 0.5%;
+        font-size: 10px;
+    }
+
+    .text-edit {
+        font-size: 7px;
+    }
+
+    .deg-edit {
+        font-size: 7px;
+    }
+
+}
+
