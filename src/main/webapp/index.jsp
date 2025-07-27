@@ -21,6 +21,14 @@
     <input name="city" type="text" placeholder="Enter the location"></input>
     <button>Submit</button>
   </form>
+  
+  <% String error = (String) request.getAttribute("error"); %>
+<% if (error != null) { %>
+  <div style="color: red; text-align: center; margin: 10px; font-size:15px;">
+    <strong><%= error %></strong>
+  </div>
+<% } %>
+  
  
 
   <div class="result">

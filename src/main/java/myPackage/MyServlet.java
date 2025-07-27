@@ -50,7 +50,7 @@ public class MyServlet extends HttpServlet {
 		String inputData = request.getParameter("userInput");
 		
 		// Get the api key
-		String apiKey = "your api key";
+		String apiKey = "bd222694db483f51b4b729c9f9142132";
 		
 		//Get the city 
 		String city = request.getParameter("city");
@@ -62,6 +62,13 @@ public class MyServlet extends HttpServlet {
 				URL url = new URL(apiUrl);
 				HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 				connection.setRequestMethod("GET");
+				
+				int responseCode = connection.getResponseCode();
+				if(responseCode != 200) {
+					 request.setAttribute("error", "❌ City not found or API error.");
+			            request.getRequestDispatcher("index.jsp").forward(request, response);
+			            return;
+				}
 				
 				//Reading the data from network
 				InputStream inputStream = connection.getInputStream();
@@ -144,7 +151,7 @@ public class MyServlet extends HttpServlet {
 				
 		
 		
-		doGet(request, response);
+		
 	}
 
 }
