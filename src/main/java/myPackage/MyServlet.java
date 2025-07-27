@@ -50,7 +50,7 @@ public class MyServlet extends HttpServlet {
 		String inputData = request.getParameter("userInput");
 		
 		// Get the api key
-		String apiKey = "bd222694db483f51b4b729c9f9142132";
+		String apiKey = "your api key";
 		
 		//Get the city 
 		String city = request.getParameter("city");
